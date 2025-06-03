@@ -130,7 +130,7 @@ tb.Entry(frame, textvariable=delay_frames_var, width=10, foreground="gray").grid
 tb.Label(frame, text="TAS Type:").grid(row=3, column=0, sticky=E)
 tb.OptionMenu(frame, tas_type_var, "BizHawk", "BizHawk", "FCEUX").grid(row=3, column=1, sticky=W)
 
-tb.Checkbutton(frame, text="Enable sync correction (every 606 frames)", variable=sync_correction_var).grid(row=4, column=1, sticky=W)
+tb.Checkbutton(frame, text="EXPERIMENTAL: Enable sync correction (every 606 frames)", variable=sync_correction_var).grid(row=4, column=1, sticky=W)
 tb.Checkbutton(frame, text="First frame is KEY_A", variable=first_frame_a_var).grid(row=5, column=1, sticky=W)
 
 tb.Button(frame, text="Convert", command=convert_file, width=20, bootstyle=SUCCESS).grid(row=6, column=1, pady=15)
