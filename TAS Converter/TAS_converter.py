@@ -5,12 +5,12 @@ import os
 
 # GUI window setup
 root = tb.Window(themename="cosmo")  # OS default styled theme
-root.title("BizHawk/FCEUX to Yuzu TAS Converter")
+root.title("Vim's BizHawk/FCEUX to Yuzu TAS Converter")
 
 # State variables
 delay_frames_var = tb.IntVar(value=202)
-sync_correction_var = tb.BooleanVar(value=True)
-first_frame_a_var = tb.BooleanVar(value=False)
+sync_correction_var = tb.BooleanVar(value=False)
+first_frame_a_var = tb.BooleanVar(value=True)
 input_file_path = tb.StringVar()
 output_file_path = tb.StringVar(value="script0-1.txt")
 tas_type_var = tb.StringVar(value="BizHawk")
@@ -46,7 +46,7 @@ def select_input_file():
     file_path = filedialog.askopenfilename(title="Select Input TAS File")
     if file_path:
         input_file_path.set(file_path)
-        suggested_output = os.path.splitext(file_path)[0] + "_converted.txt"
+        suggested_output = "script0-1.txt"
         output_file_path.set(suggested_output)
 
 def select_output_file():
