@@ -208,7 +208,7 @@ ttk_separator.grid(row=3, columnspan=3, sticky="ew", pady=10)
 
 tb.Label(options_tab, text="About", font=("PT Sans Narrow", 11, "bold")).grid(row=4, column=0, sticky=W, pady=(0, 5))
 about_text = (
-    "TAS Converter v1.1\n"
+    "TAS Converter v1.2\n"
     "Convert BizHawk/FCEUX TAS files to Yuzu format.\n"
     "Developed by Vim\n"
     "https://github.com/vimxd/nwctas"
